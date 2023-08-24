@@ -1,0 +1,212 @@
+/*
+  Name: Miya Nakata
+  Date: April 20, 2023
+  Section: CSE 154 AA, TA: Elias Martin
+
+  This is the styles.css page for the beginnings of my portfolio. The page has a
+  black, white, and yellow theme.
+*/
+
+:root {
+  --primary-color: white;
+  --secondary-color: black;
+}
+
+.dark-mode {
+  --primary-color: black;
+  --secondary-color: white;
+}
+
+.fun-border {
+  border: 3px solid #f1b24b;
+}
+
+.lie-reveal {
+  color: #f1b24b;
+}
+
+body {
+  margin: 0px;
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--secondary-color);
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0px;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul, nav li, .nav-item-active, .project-des {
+  list-style: none;
+}
+
+nav li, .nav-item-active {
+  margin-right: 35px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+nav li a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+nav li a:hover {
+  color: #f1b24b;
+  transition-duration: 0.2s;
+}
+
+.nav-item-active a {
+  text-decoration: none;
+  color: #f1b24b;
+}
+
+#theme-icon {
+  width: 35px;
+  margin-right: 30px;
+}
+
+#intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+#intro-statement {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-left: 20px;
+}
+
+#profile-pic {
+  width: 23%;
+  margin-right: 20px;
+  border-radius: 20px;
+}
+
+#intro h1 {
+  font-size: 48px;
+  margin-bottom: 0px;
+}
+
+#intro p {
+  font-size: 25px;
+}
+
+.intro-buttons {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#intro, body {
+  font-family: 'Anuphan', sans-serif;
+}
+
+button {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border: 2px solid var(--secondary-color);
+  padding: 10px 32px;
+  text-align: center;
+  font-size: 12px;
+  margin: 5px 0px;
+  margin-right: 15px;
+  border-radius: 30px;
+}
+
+button:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  transition-duration: 0.2s;
+}
+
+#c2-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+#c2-box {
+  margin: 20px;
+}
+
+#lie-btn {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+}
+
+#lie-btn:hover {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  transition-duration: 0.2s;
+}
+
+.C2-box {
+  margin: 15px;
+}
+
+#projects {
+  margin: 50px;
+}
+
+#projects h2 {
+  size: 30px;
+}
+
+#projects p {
+  size: 15px;
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-card {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 15px;
+}
+
+.project-card img {
+  width: 25vw;
+  height: 35vw;
+  border-radius: 20px;
+}
+
+.project-card:hover img {
+  filter: brightness(50%);
+  transition-duration: 0.6s;
+}
+
+.project-info {
+  display: none;
+}
+
+.project-card:hover .project-info {
+  display: block;
+  color: white;
+  position: absolute;
+  transition-duration: 0.6s;
+  text-align: center;
+}

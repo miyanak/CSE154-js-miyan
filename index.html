@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!--
+  Name: Miya Nakata
+  Date: April 20, 2023
+  Section: CSE 154 AA, TA: Elias Martin
+
+  This is the index.html page for my CP2 (and homepage of my portfolio). There's a link to my
+  LinkedIn, a button for a fun surprise, and an option to switch from a light theme to a dark theme.
+  There's also a "Two Truths and a Lie" section with a button that reveals the
+  lie.
+  ***
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@300;500&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li class="nav-item-active"><a href="index.html">HOME</a></li>
+        <!-- These two in the nav bar don't lead anywhere since I haven't set up their
+        respective pages yet. -->
+        <li><a href="">PROJECTS</a></li>
+        <li><a href="">ABOUT</a></li>
+      </ul>
+      <!-- moon icon from https://stock.adobe.com/images/vector-logo-symbol-of-the-moon-icon-
+        illustration-of-white-phase-moon-on-a-black-background-graphic-image-stylization-ancient-
+        geometry-mystical-sense/278717315 -->
+      <!-- sun icon from https://www.iconarchive.com/show/ios7-icons-by-icons8/Weather-
+        Sun-icon.html -->
+      <img id="theme-icon" src="moon.jpg" alt="dark theme icon">
+    </nav>
+    <article id="intro">
+      <img id="profile-pic" src="profile.jpg" alt="profile picture">
+      <section id="intro-statement">
+        <h1>Hey 👋 I'm Miya Nakata!</h1>
+        <p>I'm a Human Centered Design and Engineering undergrad at the University of Washington.
+          I focus on creating functional and compelling experiences through UX and UI design!
+        </p>
+        <section class="intro-buttons">
+          <form action="https://www.linkedin.com/in/miyanakata/" method="get" target="_blank">
+            <button>LINKEDIN</button>
+          </form>
+          <button id="fun-btn">CLICK ME!</button>
+        </section>
+      </section>
+    </article>
+    <!-- Not an actual part I'm keeping for my portfolio. This section was added to fit the
+      requirements of C2-->
+    <article id="c2-section">
+      <section id="c2-box">
+        <h2>Two Truths and a Lie</h2>
+        <p>Try to spot the lie before checking your answer using the button below. Good luck!</p>
+        <ul id="truth-list">
+          <li>My favorite place to visit in Europe is Rome.</li>
+          <li>The best concert I've been to is Bruno Mars.</li>
+          <li>My favorite item of clothing is a sweatshirt.</li>
+        </ul>
+        <button id="lie-btn">REVEAL THE LIE</button>
+      </section>
+    </article>
+    <article id="projects">
+      <article class="projects-container">
+        <!-- CARD 1 -->
+        <section class="project-card">
+          <img src="pantry-pal.png" alt="my recipe website">
+          <section class="project-info">
+            <h2 class="project-title">PANTRY PAL</h2>
+            <p class="project-des">Project description here</p>
+          </section>
+        </section>
+        <!-- CARD 2 -->
+        <section class="project-card">
+          <img src="album.jpg" alt="my cutomized bike">
+          <section class="project-info">
+            <h2 class="project-title">PUBLISHED MUSIC ALBUM</h2>
+            <p class="project-des">Project description here</p>
+          </section>
+        </section>
+        <!-- CARD 3 -->
+        <section class="project-card">
+          <img src="bike.png" alt="my cutomized bike">
+          <section class="project-info">
+            <h2 class="project-title">CUSTOM BUILT BIKE</h2>
+            <p class="project-des">Project description here</p>
+          </section>
+        </section>
+      </article>
+    </article>
+  </body>
+</html>
